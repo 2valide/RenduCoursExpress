@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire d'inscription</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .glass {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-r from-blue-500 to-purple-600 min-h-screen flex items-center justify-center"
+  >
+    <div class="glass p-8 rounded-lg max-w-md w-full mx-4">
+      <h1 class="text-2xl font-bold mb-6 text-white text-center">
+        Formulaire d'inscription
+      </h1>
+      <form action="http://localhost:1234/" method="POST" class="space-y-4">
+        <div>
+          <label for="nom" class="block text-sm font-medium text-white"
+            >Nom:</label
+          >
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            required
+            class="mt-1 block w-full p-2 rounded-md bg-white bg-opacity-50 border border-gray-300 text-gray-900 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div>
+          <label for="prenom" class="block text-sm font-medium text-white"
+            >Prénom:</label
+          >
+          <input
+            type="text"
+            id="prenom"
+            name="prenom"
+            required
+            class="mt-1 block w-full p-2 rounded-md bg-white bg-opacity-50 border border-gray-300 text-gray-900 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div>
+          <label for="login" class="block text-sm font-medium text-white"
+            >Login:</label
+          >
+          <input
+            type="text"
+            id="login"
+            name="login"
+            required
+            class="mt-1 block w-full p-2 rounded-md bg-white bg-opacity-50 border border-gray-300 text-gray-900 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div>
+          <label for="mdp" class="block text-sm font-medium text-white"
+            >Mot de passe:</label
+          >
+          <input
+            type="password"
+            id="mdp"
+            name="mdp"
+            required
+            class="mt-1 block w-full p-2 rounded-md bg-white bg-opacity-50 border border-gray-300 text-gray-900 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div>
+          <label for="mdpConfirm" class="block text-sm font-medium text-white"
+            >Confirmer mot de passe:</label
+          >
+          <input
+            type="password"
+            id="mdpConfirm"
+            name="mdpConfirm"
+            required
+            class="mt-1 block w-full p-2 rounded-md bg-white bg-opacity-50 border border-gray-300 text-gray-900 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div>
+          <button
+            type="submit"
+            class="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+          >
+            S'inscrire
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
